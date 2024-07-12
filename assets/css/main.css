@@ -134,10 +134,27 @@ h4 {
   font-size: 24px;
   line-height: 20px;
 }
-
+.nav-button{
+  background: #ac2d20;
+  color: #fff;
+}
 /* ============================
    3-Navigation
    =========================== */
+   .badge {
+    background-color: #C1392B; /* Badge background color */
+    color: #fff;               /* Badge text color */
+    padding: 3px 7px;          /* Padding for the badge */
+    font-size: 0.75em;         /* Font size for the badge */
+    border-radius: 10px;       /* Rounded corners for the badge */
+    vertical-align: middle;    /* Aligns the badge vertically with the text */
+    margin-left: 5px;     
+    text-transform: lowercase !important;
+    /* Space between the text and the badge */
+  }
+  .navbar-btn {
+    margin-top: 8px; /* Adjust to vertically align with nav items */
+  }
 
 ul.navbar-nav {
   float: right;
@@ -152,7 +169,7 @@ ul.navbar-nav {
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  color: #fff;
+  color: #010101;
   background: none;
 }
 .navbar-default .navbar-nav > li > a,
@@ -160,7 +177,7 @@ ul.navbar-nav {
 .navbar-default .navbar-nav > li > a:focus {
   font-size: 16px;
   line-height: 35px;
-  color: #fff;
+  color: #010101;
   font-weight: 100;
   text-transform: uppercase;
   text-align: center;
@@ -237,7 +254,7 @@ ul.dropdown-menu li a {
 }
 a.btn {
   background: #fff;
-  color: #000;
+  color: #010101;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 100;
@@ -288,7 +305,7 @@ a.navbar-brand img {
   min-width: 40px;
   z-index: 100;
   bottom: 0px;
-  background: #dd4952;
+  background: #010101;
   margin-left: 10px;
   padding-bottom: 0;
 }
@@ -2186,6 +2203,17 @@ footer .social li {
 /* ============================
    20-Responsive
    =========================== */
+   
+   @media (max-width: 992px) {
+    .nav-button{
+      display: none;
+    }
+   }
+   @media (min-width: 992px) {
+    .nav-container{
+      display: flex;justify-content: space-between; align-items: center;
+    }
+   }
 /* Large desktop */
 @media (min-width: 1200px) {
   .boxed-layout {
@@ -2198,8 +2226,8 @@ footer .social li {
   }
 
   .navbar-nav > li {
-    padding-left: 21px;
-    padding-right: 21px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 
   .navbar-default .social-fonts {
